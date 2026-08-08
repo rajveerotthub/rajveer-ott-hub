@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RAJVEER OTT HUB - Premium digital subscription deals.">
+  <title>RAJVEER OTT HUB | Premium Entertainment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <div class="brand-mark">R</div>
+      <div><strong>RAJVEER</strong><span>OTT HUB</span></div>
+    </div>
+    <a class="nav-btn" href="#plans">View Plans</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">PREMIUM DIGITAL SUBSCRIPTIONS</p>
+        <h1>Premium Entertainment.<br><span>Better Deals.</span></h1>
+        <p class="hero-text">Choose your preferred plan, check the validity and place your order with RAJVEER OTT HUB.</p>
+        <div class="hero-actions">
+          <a href="#plans" class="btn primary">Explore Plans</a>
+          <a href="#how-it-works" class="btn secondary">How It Works</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="screen"><span>RAJVEER</span><small>OTT HUB</small></div>
+        <div class="popcorn">🍿</div>
+      </div>
+    </section>
+
+    <section class="trust">
+      <div><b>✓</b><span>Easy Ordering</span></div>
+      <div><b>⚡</b><span>Quick Activation</span></div>
+      <div><b>◉</b><span>Customer Support</span></div>
+      <div><b>◆</b><span>Trusted Service</span></div>
+    </section>
+
+    <section id="plans" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR SUBSCRIPTIONS</p>
+        <h2>Choose Your Plan</h2>
+        <p>Simple pricing. Clear validity. No complicated checkout.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card youtube">
+          <div class="logo-text yt">YouTube <small>Premium</small></div>
+          <h3>YouTube Premium</h3>
+          <div class="plans">
+            <button type="button" onclick="openCheckout('YouTube Premium','1 Month',49)"><span>1 Month</span><strong>₹49</strong></button>
+            <button type="button" onclick="openCheckout('YouTube Premium','6 Months',199)"><span>6 Months</span><strong>₹199</strong></button>
+            <button type="button" onclick="openCheckout('YouTube Premium','12 Months',349)"><span>12 Months</span><strong>₹349</strong></button>
+          </div>
+          <button class="buy" type="button" onclick="openCheckout('YouTube Premium', '1 Month', 49)">Buy Now</button>
+        </article>
+
+        <article class="card netflix">
+          <div class="logo-text nf">NETFLIX</div>
+          <h3>Netflix</h3>
+          <div class="plans">
+            <button type="button" onclick="openCheckout('Netflix','1 Month',79)"><span>1 Month</span><strong>₹79</strong></button>
+            <button type="button" onclick="openCheckout('Netflix','6 Months',349)"><span>6 Months</span><strong>₹349</strong></button>
+            <button type="button" onclick="openCheckout('Netflix','12 Months',549)"><span>12 Months</span><strong>₹549</strong></button>
+          </div>
+          <button class="buy" type="button" onclick="openCheckout('Netflix', '1 Month', 79)">Buy Now</button>
+        </article>
+
+        <article class="card prime">
+          <div class="logo-text pv">prime video</div>
+          <h3>Prime Video</h3>
+          <div class="plans">
+            <button type="button" onclick="openCheckout('Prime Video','1 Month',59)"><span>1 Month</span><strong>₹59</strong></button>
+            <button type="button" onclick="openCheckout('Prime Video','6 Months',199)"><span>6 Months</span><strong>₹199</strong></button>
+            <button type="button" onclick="openCheckout('Prime Video','12 Months',349)"><span>12 Months</span><strong>₹349</strong></button>
+          </div>
+          <button class="buy" type="button" onclick="openCheckout('Prime Video', '1 Month', 59)">Buy Now</button>
+        </article>
+
+        <article class="card hotstar">
+          <div class="logo-text dh">Disney+<small>hotstar</small></div>
+          <h3>JioHotstar</h3>
+          <div class="plans">
+            <button type="button" onclick="openCheckout('JioHotstar','1 Month',79)"><span>1 Month</span><strong>₹79</strong></button>
+            <button type="button" onclick="openCheckout('JioHotstar','6 Months',349)"><span>6 Months</span><strong>₹349</strong></button>
+            <button type="button" onclick="openCheckout('JioHotstar','12 Months',599)"><span>12 Months</span><strong>₹599</strong></button>
+          </div>
+          <button class="buy" type="button" onclick="openCheckout('JioHotstar', '1 Month', 79)">Buy Now</button>
+        </article>
+
+        <article class="card sony">
+          <div class="logo-text sl">SONY <small>liv</small></div>
+          <h3>SonyLIV Premium</h3>
+          <div class="plans">
+            <div><span>12 Months</span><strong>₹549</strong></div>
+          </div>
+          <button class="buy" type="button" onclick="openCheckout('SonyLIV Premium', '12 Months', 549)">Buy Now</button>
+        </article>
+
+        <article class="card zee">
+          <div class="logo-text z5">ZEE5</div>
+          <h3>ZEE5</h3>
+          <div class="plans">
+            <div><span>12 Months</span><strong>₹299</strong></div>
+          </div>
+          <button class="buy" type="button" onclick="openCheckout('ZEE5', '12 Months', 299)">Buy Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="combo">
+      <div>
+        <p class="eyebrow">BEST VALUE COMBO</p>
+        <h2>Prime Video + Netflix + YouTube Premium</h2>
+        <p>1 Year Validity</p>
+      </div>
+      <div><div class="combo-price">₹999 <small>/ year</small></div><button class="buy combo-buy" type="button" onclick="openCheckout('Best Value Combo','1 Year',999)">Buy Combo</button></div>
+    </section>
+
+    <section id="how-it-works" class="how section">
+      <div class="section-heading">
+        <p class="eyebrow">SIMPLE PROCESS</p>
+        <h2>How It Works</h2>
+      </div>
+      <div class="steps">
+        <div><span>01</span><h3>Select</h3><p>Choose an OTT service and validity.</p></div>
+        <div><span>02</span><h3>Order</h3><p>Send your selected plan and customer details.</p></div>
+        <div><span>03</span><h3>Pay</h3><p>Complete payment through the available payment method.</p></div>
+        <div><span>04</span><h3>Activate</h3><p>Receive your subscription details after verification.</p></div>
+      </div>
+    </section>
+
+    <section id="order" class="order section">
+      <div class="order-box">
+        <p class="eyebrow">ORDER / SUPPORT</p>
+        <h2>Ready to place an order?</h2>
+        <p>Payment gateway and WhatsApp ordering can be connected here. Replace the placeholder contact details before publishing.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:YOUR_EMAIL@example.com?subject=RAJVEER%20OTT%20HUB%20Order">Email Order</a>
+          <a class="btn secondary" href="https://wa.me/YOURNUMBER">WhatsApp Order</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand compact"><div class="brand-mark">R</div><div><strong>RAJVEER</strong><span>OTT HUB</span></div></div>
+    <p>This is a digital subscription service. All trademarks and brand names belong to their respective owners.</p>
+    <p>© 2026 RAJVEER OTT HUB. All rights reserved.</p>
+  </footer>
+
+<div id="checkout" class="modal" aria-hidden="true">
+  <div class="modal-card">
+    <button class="close" onclick="closeCheckout()" aria-label="Close">×</button>
+    <p class="eyebrow">SECURE ORDER</p>
+    <h2>Complete Your Order</h2>
+    <div class="summary"><span id="selectedPlan">Plan</span><strong id="selectedPrice">₹0</strong></div>
+    <form id="orderForm" onsubmit="submitOrder(event)">
+      <input type="hidden" id="planInput">
+      <input type="hidden" id="validityInput">
+      <input type="hidden" id="priceInput">
+      <label>Full Name<input id="customerName" required placeholder="Your name"></label>
+      <label>Email<input id="customerEmail" type="email" required placeholder="you@example.com"></label>
+      <label>WhatsApp Number<input id="customerPhone" required placeholder="+91XXXXXXXXXX"></label>
+      <label>Payment Method
+        <select id="paymentMethod" required>
+          <option value="">Select payment method</option>
+          <option value="UPI">UPI</option>
+          <option value="Payment Gateway">Payment Gateway (to be connected)</option>
+        </select>
+      </label>
+      <button class="btn primary full" type="submit">Continue to Payment</button>
+      <p class="fine">Your order is prepared first. The live payment gateway/UPI details must be connected before accepting real payments.</p>
+    </form>
+    <div id="orderResult" class="result" hidden></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
